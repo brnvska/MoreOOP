@@ -13,7 +13,11 @@ public class Knight extends Character{
         c.setHp(c.getHp() - randomGenerator.nextInt(getPower()));
     }
 
+    @Override
     public String toString() {
-        return String.format("king{hp=%a, power= %a}",getHp(), getPower());
+        return this.getClass().getSimpleName() + "{" +
+                "hp=" + getHp() +
+                ", power=" + getPower() +
+                '}';
     }
 }

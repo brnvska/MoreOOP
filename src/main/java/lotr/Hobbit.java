@@ -11,6 +11,9 @@ public class Hobbit extends Character {
 
     @Override
     public String toString() {
-        return String.format("Hobbit{hp= %a, power= %a}", getHp(), getPower());
+        return this.getClass().getSimpleName() + "{" +
+                "hp=" + getHp() +
+                ", power=" + getPower() +
+                '}';
     }
 }

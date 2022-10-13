@@ -15,7 +15,15 @@ public class Elf extends Character{
         }
     }
 
+//    public String toString() {
+//        return String.format("Elf{hp=%a, power=%a",getPower(),  getHp());
+//    }
+
+    @Override
     public String toString() {
-        return String.format("Elf{hp=%a, power=%a",getPower(),  getHp());
+        return this.getClass().getSimpleName() + "{" +
+                "hp=" + getHp() +
+                ", power=" + getPower() +
+                '}';
     }
 }
